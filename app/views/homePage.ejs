@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/style.css">
   
-  <title>Document</title>
+  <title>Les Argonautes</title>
 </head>
 <body>
   <!-- Header section -->
@@ -21,17 +22,17 @@
   <!-- New member form -->
   <h2>Ajouter un(e) Argonaute</h2>
   <form class="new-member-form">
-    <label for="name">Nom de l&apos;Argonaute</label>
-    <input id="name" name="name" type="text" placeholder="Charalampos" />
+    <label for="name">Nom de l'Argonaute</label>
+    <input id="name" name="name" type="text" placeholder="inscrire ici le nom de l'argonaute" />
     <button type="submit">Envoyer</button>
   </form>
   
   <!-- Member list -->
   <h2>Membres de l'équipage</h2>
   <section class="member-list">
-    <div class="member-item">Eleftheria</div>
-    <div class="member-item">Gennadios</div>
-    <div class="member-item">Lysimachos</div>
+    <% for (let argonaute of argonautes) { %>
+      <div class="member-item"><%=argonaute.name></div>
+    <% } %>
   </section>
 </main>
 

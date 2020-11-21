@@ -1,13 +1,13 @@
 // Les requires
-require('dotenv').confid();
+require('dotenv').config();
 const express = require('express');
-const router = require('router');
+const router = require('./app/router');
 
 //création du serveur express
 const app = express();
 
 // réglage des moteurs de vues
-app.set('view engine, ejs');
+app.set('view engine', 'ejs');
 app.set('views', './app/views');
 
 //fichiers statiques
