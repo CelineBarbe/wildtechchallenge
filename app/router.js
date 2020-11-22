@@ -6,6 +6,6 @@ const mainController = require ('./controllers/mainController');
 // Routage
 
 router.get('/', mainController.homePage);
-//router.post('/', mainController.handleForm);
+router.post('/', mainController.handleForm);
 
 module.exports = router;

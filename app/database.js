@@ -9,7 +9,8 @@ const sequelize = new Sequelize(
             underscore: true,
             timestamps: false
         }
-    }
+    },
+
 );
 
 module.exports = sequelize;
